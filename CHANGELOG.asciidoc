@@ -21,7 +21,6 @@ Added
 ~~~~~
 
 - New `:edit-url` command to edit the URL in an external editor.
-- New `network -> custom-headers` setting to send custom headers with every request.
 
 Changed
 ~~~~~~~
