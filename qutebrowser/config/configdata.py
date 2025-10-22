@@ -401,10 +401,6 @@ def data(readonly=False):
              SettingValue(typ.Bool(), 'true'),
              "Whether to try to pre-fetch DNS entries to speed up browsing."),
 
-            ('custom-headers',
-             SettingValue(typ.HeaderDict(none_ok=True), ''),
-             "Set custom headers for qutebrowser HTTP requests."),
-
             readonly=readonly
         )),
 
@@ -1441,6 +1437,8 @@ KEY_DATA = collections.OrderedDict([
         ('search-prev', ['N']),
         ('enter-mode insert', ['i']),
         ('enter-mode caret', ['v']),
+        ('enter-mode set_mark', ['`']),
+        ('enter-mode jump_mark', ["'"]),
         ('yank', ['yy']),
         ('yank -s', ['yY']),
         ('yank -t', ['yt']),
